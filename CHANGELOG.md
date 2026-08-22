@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Make the CI discovery assertion tolerate ANSI color codes emitted by the skills CLI.
+
 ## 1.0.1
 
 - Declare `Iamshankhadeep/skills` as the canonical distribution.

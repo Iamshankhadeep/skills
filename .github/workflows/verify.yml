@@ -22,4 +22,4 @@ jobs:
       - name: Verify skills CLI discovery
         run: |
           npx --yes skills@latest add . --list | tee /tmp/skills-list.txt
-          grep -q "Found 84 skills" /tmp/skills-list.txt
+          grep -Eq "Found .*84.* skills" /tmp/skills-list.txt
