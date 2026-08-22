@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "name": "@iamshankhadeep/skills",
+  "canonicalRepository": "https://github.com/Iamshankhadeep/skills",
+  "version": "1.0.1",
+  "expectedSkillCount": 84,
+  "sources": [
+    {
+      "name": "cursor-pstack",
+      "repository": "https://github.com/cursor/plugins",
+      "revision": "46125561306434d8a1d7745d540d8932ab0cd2a2",
+      "paths": ["pstack/skills", "pstack/automations/benny"],
+      "skillCount": 47,
+      "license": "MIT"
+    },
+    {
+      "name": "mattpocock-skills",
+      "repository": "https://github.com/mattpocock/skills",
+      "revision": "5b15a47f2d7150f545fbcacbfe381787fc0230dc",
+      "paths": ["skills"],
+      "skillCount": 36,
+      "license": "MIT"
+    },
+    {
+      "name": "herdr",
+      "repository": "https://github.com/herdrdev/herdr",
+      "revision": "9eb521456ac0d19d3ab3d9d7cea3cca10baa8a4c",
+      "paths": ["skills/herdr"],
+      "skillCount": 1,
+      "license": "Apache-2.0"
+    }
+  ],
+  "renames": [
+    {
+      "source": "mattpocock-skills",
+      "upstream": "tdd",
+      "canonical": "regression-tdd"
+    },
+    {
+      "source": "mattpocock-skills",
+      "upstream": "teach",
+      "canonical": "explain-code"
+    },
+    {
+      "source": "cursor-pstack",
+      "upstream": "Poteto Mode",
+      "canonical": "poteto-mode"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Agent skills collection
 
-This repository packages 84 skills from Pstack, Matt Pocock's skills, and Herdr so they can be installed together with the [skills CLI](https://skills.sh/).
+This repository is the canonical distribution for `@iamshankhadeep/skills`. It packages 84 skills from Pstack, Matt Pocock's skills, and Herdr so they can be installed together with the [skills CLI](https://skills.sh/). Upstream repositories are inputs; this repository's names, routing adjustments, version tags, and `collection.json` define the released collection.
 
 Version 1 preserves the source collections' orchestration behavior, apart from the documented name-collision fixes. The `v1.0.0` Git tag is the stable rollback point before provider-neutral Herdr orchestration is introduced in version 2.
 
@@ -11,19 +11,19 @@ The proposed version 2 contract is documented in [docs/v2-herdr-orchestration.md
 Install every skill for every supported agent in the current project:
 
 ```bash
-npx skills@latest add Iamshankhadeep/skills --all
+npx skills@latest add iamshankhadeep/skills --all
 ```
 
 Install every skill globally for every supported agent:
 
 ```bash
-npx skills@latest add Iamshankhadeep/skills --all --global
+npx skills@latest add iamshankhadeep/skills --all --global
 ```
 
 List the skills without installing them:
 
 ```bash
-npx skills@latest add Iamshankhadeep/skills --list
+npx skills@latest add iamshankhadeep/skills --list
 ```
 
 Use `--skill <name>` and `--agent <name>` instead of `--all` for a selective install.

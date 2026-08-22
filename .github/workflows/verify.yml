@@ -1,0 +1,25 @@
+name: Verify skill collection
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify manifests and collection lock
+        run: node scripts/verify-collection.mjs
+      - name: Verify skills CLI discovery
+        run: |
+          npx --yes skills@latest add . --list | tee /tmp/skills-list.txt
+          grep -q "Found 84 skills" /tmp/skills-list.txt
