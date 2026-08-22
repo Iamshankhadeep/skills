@@ -4,6 +4,8 @@ This repository packages 84 skills from Pstack, Matt Pocock's skills, and Herdr 
 
 Version 1 preserves the source collections' orchestration behavior, apart from the documented name-collision fixes. The `v1.0.0` Git tag is the stable rollback point before provider-neutral Herdr orchestration is introduced in version 2.
 
+The proposed version 2 contract is documented in [docs/v2-herdr-orchestration.md](docs/v2-herdr-orchestration.md). It is a design only; the installed skills still use version 1 behavior.
+
 ## Install
 
 Install every skill for every supported agent in the current project:
