@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2
+
+- Update the verification workflow to the current Node 24-based GitHub action releases.
+
 ## 1.1.1
 
 - Complete the canonical count, documentation, source lock, and CI updates for the Benny removal.
