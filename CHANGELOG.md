@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.1
+
+- Complete the canonical count, documentation, source lock, and CI updates for the Benny removal.
+
+## 1.1.0
+
+- Remove the complete Pstack Benny automation pack.
+- Remove `setup-benny`, `triage-issue-reports`, and `reproduce-and-fix-issues` from the collection.
+- Reduce the canonical collection from 84 to 81 skills.
+
 ## 1.0.2
 
 - Make the CI discovery assertion tolerate ANSI color codes emitted by the skills CLI.

@@ -1,6 +1,6 @@
 # Agent skills collection
 
-This repository is the canonical distribution for `@iamshankhadeep/skills`. It packages 84 skills from Pstack, Matt Pocock's skills, and Herdr so they can be installed together with the [skills CLI](https://skills.sh/). Upstream repositories are inputs; this repository's names, routing adjustments, version tags, and `collection.json` define the released collection.
+This repository is the canonical distribution for `@iamshankhadeep/skills`. It packages 81 skills from Pstack, Matt Pocock's skills, and Herdr so they can be installed together with the [skills CLI](https://skills.sh/). Upstream repositories are inputs; this repository's names, routing adjustments, version tags, and `collection.json` define the released collection.
 
 Version 1 preserves the source collections' orchestration behavior, apart from the documented name-collision fixes. The `v1.0.0` Git tag is the stable rollback point before provider-neutral Herdr orchestration is introduced in version 2.
 
@@ -33,14 +33,13 @@ Use `--skill <name>` and `--agent <name>` instead of `--all` for a selective ins
 | Directory | Count | Contents |
 | --- | ---: | --- |
 | `skills/pstack/` | 44 | Pstack's core workflows, principles, writing, orchestration, and verification skills |
-| `skills/pstack-benny/` | 3 | Benny issue-triage and reproduction automations, including their required templates |
 | `skills/mattpocock/engineering/` | 18 | Stable engineering workflows |
 | `skills/mattpocock/productivity/` | 7 | Stable productivity and teaching workflows |
 | `skills/mattpocock/in-progress/` | 7 | Experimental/in-progress workflows |
 | `skills/mattpocock/misc/` | 4 | Narrow or platform-specific utilities |
 | `skills/herdr/` | 1 | Herdr terminal-multiplexer control |
 
-Total: 84 skill manifests with 84 unique skill names.
+Total: 81 skill manifests with 81 unique skill names.
 
 ## Collision policy
 
@@ -76,8 +75,7 @@ The strongest internal overlaps are Matt's `grill-me`/`grilling`, `handoff`/`cla
 
 ## Portability notes
 
-- Benny requires its full automation pack and configuration, not only its three `SKILL.md` files.
-- `setup-pstack`, parts of `poteto-mode`, and Benny contain Cursor-specific behavior.
+- `setup-pstack` and parts of `poteto-mode` contain Cursor-specific behavior.
 - `git-guardrails-claude-code` is specific to Claude Code.
 - `herdr` is intentionally inactive unless the agent is running with `HERDR_ENV=1`.
 - Skills that spawn parallel agents degrade according to the capabilities of the host agent. Installing a skill for every agent does not make every host support the same tools.

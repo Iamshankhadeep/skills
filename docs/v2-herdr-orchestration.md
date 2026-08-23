@@ -108,7 +108,7 @@ Migrate in increasing order of coordination risk:
 - Parallel writers cannot modify the same checkout concurrently.
 - No migrated skill contains an active direct call to Cursor Task, cloud workers, `claude --bg`, or another provider-specific subagent service.
 - Missing Herdr state or an unavailable requested kind produces a clear stop or safe parent-only execution, never a hidden provider fallback.
-- The skills CLI still discovers 84 unique source-derived skills plus any new shared orchestration skill introduced for v2.
+- The skills CLI still discovers 81 unique source-derived skills plus any new shared orchestration skill introduced for v2.
 
 ## Rollback
 
