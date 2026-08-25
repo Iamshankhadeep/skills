@@ -1,6 +1,6 @@
 # Agent skills collection
 
-This repository is the canonical distribution for `@iamshankhadeep/skills`. It packages 81 skills from Pstack, Matt Pocock's skills, and Herdr so they can be installed together with the [skills CLI](https://skills.sh/). Upstream repositories are inputs; this repository's names, routing adjustments, version tags, and `collection.json` define the released collection.
+This repository is the canonical distribution for `@iamshankhadeep/skills`. It packages 82 skills from Pstack, Matt Pocock's skills, Anthropic, and Herdr so they can be installed together with the [skills CLI](https://skills.sh/). Upstream repositories are inputs; this repository's names, routing adjustments, version tags, and `collection.json` define the released collection.
 
 Version 1 preserves the source collections' orchestration behavior, apart from the documented name-collision fixes. The `v1.0.0` Git tag is the stable rollback point before provider-neutral Herdr orchestration is introduced in version 2.
 
@@ -37,9 +37,10 @@ Use `--skill <name>` and `--agent <name>` instead of `--all` for a selective ins
 | `skills/mattpocock/productivity/` | 7 | Stable productivity and teaching workflows |
 | `skills/mattpocock/in-progress/` | 7 | Experimental/in-progress workflows |
 | `skills/mattpocock/misc/` | 4 | Narrow or platform-specific utilities |
+| `skills/anthropic/` | 1 | Anthropic's `frontend-design` guidance |
 | `skills/herdr/` | 1 | Herdr terminal-multiplexer control |
 
-Total: 81 skill manifests with 81 unique skill names.
+Total: 82 skill manifests with 82 unique skill names.
 
 ## Collision policy
 
@@ -85,6 +86,7 @@ The strongest internal overlaps are Matt's `grill-me`/`grilling`, `handoff`/`cla
 
 - [Cursor Pstack](https://github.com/cursor/plugins/tree/main/pstack), snapshot `46125561306434d8a1d7745d540d8932ab0cd2a2` (MIT)
 - [Matt Pocock's skills](https://github.com/mattpocock/skills/tree/main/skills), snapshot `5b15a47f2d7150f545fbcacbfe381787fc0230dc` (MIT)
+- [Anthropic frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design), snapshot `3b3fad96af16a10759d930941b4520ba0c40edae` (Apache-2.0)
 - [Herdr skill v0.8.2](https://github.com/herdrdev/herdr/blob/v0.8.2/skills/herdr/SKILL.md), commit `9eb521456ac0d19d3ab3d9d7cea3cca10baa8a4c` (Apache-2.0)
 
 The corresponding license texts are retained in `licenses/`.

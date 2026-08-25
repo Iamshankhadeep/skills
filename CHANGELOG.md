@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0
+
+- Add Anthropic's `frontend-design` skill with its Apache-2.0 license.
+- Pin the Anthropic skills upstream revision in the canonical collection lock.
+- Increase the canonical collection from 81 to 82 unique skills.
+
 ## 1.1.2
 
 - Update the verification workflow to the current Node 24-based GitHub action releases.

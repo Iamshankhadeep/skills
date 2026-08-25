@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "name": "@iamshankhadeep/skills",
   "canonicalRepository": "https://github.com/Iamshankhadeep/skills",
-  "version": "1.1.2",
-  "expectedSkillCount": 81,
+  "version": "1.2.0",
+  "expectedSkillCount": 82,
   "sources": [
     {
       "name": "cursor-pstack",
@@ -26,6 +26,14 @@
       "repository": "https://github.com/herdrdev/herdr",
       "revision": "9eb521456ac0d19d3ab3d9d7cea3cca10baa8a4c",
       "paths": ["skills/herdr"],
+      "skillCount": 1,
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "anthropic-skills",
+      "repository": "https://github.com/anthropics/skills",
+      "revision": "3b3fad96af16a10759d930941b4520ba0c40edae",
+      "paths": ["skills/frontend-design"],
       "skillCount": 1,
       "license": "Apache-2.0"
     }
